@@ -16,6 +16,7 @@ This Web API project is developed using Asp.Net and serves as the back-end API f
 
 - Asp.Net Web API
 - Visual Studio 2017
+- Swagger UI
 
 Please note that you might be prompted to update the C# version when opening the project in Visual Studio 2017 or higher. Please follow the instructions to update accordingly.
 
@@ -52,6 +53,7 @@ Asp.Net-Web-Api-for-change-over-time-dashboard
 
 - Asp.Net Web API
 - Visual Studio 2017
+- Swagger UI
 
 请注意，当在Visual Studio 2017 或更高版本的 Visual Studio中打开项目时，可能会提示您更新C#版本。请按照提示进行相应的更新。
 
