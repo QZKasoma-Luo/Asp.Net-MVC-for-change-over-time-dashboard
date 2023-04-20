@@ -14,7 +14,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ChangOverTime</RootNamespace>
     <AssemblyName>ChangOverTime</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
@@ -25,6 +25,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -52,13 +53,13 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Abstractions" />
     <Reference Include="System.Web.Routing" />
@@ -112,6 +113,7 @@
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
+    <Reference Include="System.Xml.Linq" />
     <Reference Include="WebActivatorEx, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
       <HintPath>..\packages\WebActivatorEx.2.0\lib\net40\WebActivatorEx.dll</HintPath>
     </Reference>
@@ -164,10 +166,23 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ALL_Tonnage_MU_Controller.cs" />
+    <Compile Include="Controllers\ChangeOverController.cs" />
+    <Compile Include="Controllers\DownController.cs" />
+    <Compile Include="Controllers\DownPageController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MCRRController.cs" />
+    <Compile Include="Controllers\MUBarChartController.cs" />
     <Compile Include="Controllers\NoPlanController.cs" />
     <Compile Include="Controllers\OEEOverAllController.cs" />
+    <Compile Include="Controllers\OfflineController.cs" />
+    <Compile Include="Controllers\OutOfCycleController.cs" />
+    <Compile Include="Controllers\ProcessingController.cs" />
+    <Compile Include="Controllers\SetUpController.cs" />
+    <Compile Include="Controllers\tableDataForHourlyController.cs" />
     <Compile Include="Controllers\Top5ReasonDownController.cs" />
+    <Compile Include="Controllers\TrailRunController.cs" />
+    <Compile Include="Controllers\UnknowController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -229,9 +244,22 @@
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
     <Folder Include="Views\Account\" />
+    <Folder Include="Views\ALL_Tonnage_MU_\" />
+    <Folder Include="Views\ChangeOver\" />
+    <Folder Include="Views\DownPage\" />
+    <Folder Include="Views\Down\" />
+    <Folder Include="Views\MCRR\" />
+    <Folder Include="Views\MUBarChart\" />
     <Folder Include="Views\NoPlan\" />
     <Folder Include="Views\OEEOverAll\" />
+    <Folder Include="Views\Offline\" />
+    <Folder Include="Views\OutOfCycle\" />
+    <Folder Include="Views\Processing\" />
+    <Folder Include="Views\SetUp\" />
+    <Folder Include="Views\tableDataForHourly\" />
     <Folder Include="Views\Top5ReasonDown\" />
+    <Folder Include="Views\TrailRun\" />
+    <Folder Include="Views\Unknow\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
